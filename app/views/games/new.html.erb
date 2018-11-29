@@ -1,0 +1,8 @@
+<%= form_with model: @game, class: "new_game_form" do |f| %>
+  <%= f.text_field :name %>
+  <% Member.all do %>
+    <%= check_box_tag :name  %>
+    <%= label_tag :name, "Name:" %>
+  <% end %>
+  <%= f.submit "Submit" %>
+<% end %>

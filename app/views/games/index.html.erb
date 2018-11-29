@@ -1,0 +1,5 @@
+<div class="main">
+  <h1>Please select a game to join:</h1>
+  <% games_array = Game.all.map { |game| [game.name, game.id] } %>
+  <%= select_tag(:game, options_for_select(games_array)) %>
+</div>
