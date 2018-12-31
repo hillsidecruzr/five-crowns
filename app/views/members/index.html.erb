@@ -1,0 +1,12 @@
+<div class="main">
+  <h1>Please select a player to use:</h1>
+  <% members_array = Member.all.map { |member| [member.name, member.id] } %>
+  <% if members_array.length > 0 %>
+  <%= select_tag(:member, options_for_select(members_array)) %>
+  <button onClick="window.location = '<%= games_path %>'">Use</button>
+  <span><b>OR</b></span>
+  <% end %>
+
+
+  <button onclick="window.location = '/members/new'">Create</button>
+</div>

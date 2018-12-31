@@ -1,0 +1,7 @@
+<%= form_with model: @member, class: "new_member_form" do |f| %>
+  <%= f.label :name, "Player name:" %>
+  <%= f.text_field :name %><br>
+  <%= f.label :nickname, "Player nickname:" %>
+  <%= f.text_field :nickname %><br>
+  <%= f.submit "Submit" %>
+<% end %>

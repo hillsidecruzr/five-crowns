@@ -2,4 +2,11 @@
   <h1>Please select a game to join:</h1>
   <% games_array = Game.all.map { |game| [game.name, game.id] } %>
   <%= select_tag(:game, options_for_select(games_array)) %>
+  <% if games_array.length > 0 %>
+    <%= select_tag(:member, options_for_select(games_array)) %>
+    <button onClick="window.location = '<%= dashboard_path %>'">Use</button>
+    <span><b>OR</b></span>
+  <% end %>
+
+  <button onclick="window.location = '/games/new'">Create</button>
 </div>
