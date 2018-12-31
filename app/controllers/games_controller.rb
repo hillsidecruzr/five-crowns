@@ -3,10 +3,8 @@ class GamesController < ApplicationController
   end
 
   def create
-    # @game.save(game_params)
     Game.new(game_params).save
-    # @todo create a dashboard controller/model for housing information about the game
-    # redirect_to dashboard_path
+
     redirect_to dashboard_path
   end
 

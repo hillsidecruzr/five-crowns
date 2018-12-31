@@ -9,7 +9,7 @@ class MembersController < ApplicationController
 
   def create
     Member.new(member_params).save
-    # @todo create a dashboard controller/model for housing information about the game
+
     redirect_to games_path
   end
 end
