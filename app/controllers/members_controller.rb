@@ -13,6 +13,10 @@ class MembersController < ApplicationController
       redirect_to games_path and return
     end
   end
+
+  def find
+    # @todo figure out how to send and store a selected member into the session
+  end
 end
 
 private
