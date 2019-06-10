@@ -5,7 +5,7 @@ class GamesController < ApplicationController
   def create
     Game.new(game_params).save
 
-    redirect_to dashboard_path
+    redirect_to dashboard_index_path
   end
 
   def new

@@ -3,10 +3,10 @@
   <% members_array = Member.all.map { |member| [member.name, member.id] } %>
   <% if members_array.length > 0 %>
   <%= select_tag(:member, options_for_select(members_array)) %>
-  <button onClick="window.location = '<%=  %>'">Use</button>
+  <button onClick="window.location = '<%= games_path %>'">Use</button>
   <span><b>OR</b></span>
   <% end %>
 
 
-  <button onclick="window.location = '<%= new_members_path %>'">Create</button>
+  <button onclick="window.location = '<%= new_member_path %>'">Create</button>
 </div>
