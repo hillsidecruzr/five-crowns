@@ -14,6 +14,16 @@ class MembersController < ApplicationController
     end
   end
 
+  def signin
+    if params.has_key?(:member) === false
+      flash[:error] = "Incorrect member info given"
+      redirect_to members_path and return
+    end
+
+    session[:member_id] = Member.find(params.fetch(:member)).id
+    redirect_to dashboard_index_path
+  end
+
   def find
     # @todo figure out how to send and store a selected member into the session
   end

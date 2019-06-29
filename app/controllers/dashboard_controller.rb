@@ -5,11 +5,9 @@
 #         2. Store this info on the Member record as a JSONB indexed by game id (we would delete a game when it is finished to
 #            prevent lookups on an undefined game and such)
 class DashboardController < ApplicationController
-  def index
-    game_id = params.fetch(:game, nil)
-    return if game_id === nil
+  before_action :redirect_unauthenticated_users, only: :index
 
-    # TODO: May want to store this in session
-    @game = Game.find(game_id)
+  def index
+    @member = Member.find(session[:member_id])
   end
 end

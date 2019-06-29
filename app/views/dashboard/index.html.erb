@@ -1,0 +1,15 @@
+<div class="dashboard-index">
+  <div class="member">
+    <h2>Hey <%= @member.nickname %>!</h2>
+    <div class="member-stats">
+        <div class="member-stats__low-score">
+          Lowest Score: <%= @member.low_score || 0 %>
+          High out rate: <%= @member.high_out_rate || 0 %>
+        </div>
+    </div>
+  </div>
+  <div>
+    <h2>Are you ready to hop in a game?</h2>
+    <button><a href="<%= games_path %>">Select/Create a Game</a></button>
+  </div>
+</div>

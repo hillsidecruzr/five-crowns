@@ -1,12 +1,12 @@
 <div class="main">
   <h1>Please select a game to join:</h1>
   <% games_array = Game.all.map { |game| [game.name, game.id] } %>
-  <%= form_tag({controller: 'dashboard', action: 'index'}, method: 'get') do %>
+  <%= form_tag(games_select_path, method: 'get') do %>
     <% if games_array.length > 0 %>
       <%= select_tag(:game, options_for_select(games_array)) %>
-      <%= submit_tag('User') %>
+      <%= submit_tag('Join') %>
     <% end %>
-<% end %>
+  <% end %>
 
   <span><b>OR</b></span>
   <button onclick="window.location = '/games/new'">Create</button>

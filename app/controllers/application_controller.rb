@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include UnauthenticatedUsersConcern
+
   def index
 
   end
