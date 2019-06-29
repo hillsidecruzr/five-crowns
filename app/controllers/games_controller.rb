@@ -9,7 +9,7 @@ class GamesController < ApplicationController
   def create
     session[:game] = Game.new(game_params).save
 
-    redirect_to dashboard_index_path
+    redirect_to games_select_path
   end
 
   def new

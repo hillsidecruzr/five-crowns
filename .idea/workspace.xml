@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0599c498-6a7c-4554-8101-999f25a96b82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/unauthenticated_users_concern.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/games/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/members_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/members_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/members/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -88,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="161">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -366,15 +356,16 @@
       <workItem from="1552948811885" duration="15000" />
       <workItem from="1560129419475" duration="2129000" />
       <workItem from="1561317198858" duration="4404000" />
-      <workItem from="1561811594024" duration="1480000" />
+      <workItem from="1561811594024" duration="1564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25212000" />
+    <option name="totallyTimeSpent" value="25296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23909532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -852,8 +843,8 @@ Member.find_by_name(member_params.name)</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="161">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
